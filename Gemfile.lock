@@ -38,6 +38,8 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
+    browserify-rails (0.4.2)
+      sprockets (~> 2.0)
     builder (3.2.2)
     chunky_png (1.2.9)
     coffee-rails (4.0.1)
@@ -128,6 +130,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  browserify-rails (~> 0.4.1)
   coffee-rails (~> 4.0.0)
   compass-rails
   jbuilder (~> 2.0)
