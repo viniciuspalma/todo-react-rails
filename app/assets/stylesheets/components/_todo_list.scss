@@ -1,0 +1,48 @@
+/*
+* Todo List component
+*/
+
+.todo-list {
+  width: 300px;
+  height: 350px;
+  margin: 0 auto;
+  background: url(asset_path('bg_smoke.png')) repeat;
+  background-color: $dark-marine-blue;
+  border-radius: 0 0 20px 20px;
+
+  .list-content {
+    width: 270px;
+    height: 320px;
+    background: white;
+    margin: 0 15px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 2px 0 0 $dark-grey,
+                0 4px 0 0 $light-grey,
+                0 6px 0 0 $dark-grey,
+                0 8px 0 0 $light-grey,
+                0 10px 0 0 $dark-grey,
+                0 12px 0 0 $light-grey;
+
+    .list {
+      display: inline-block;
+      height: 320px - 50px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  }
+
+  .title {
+    height: 50px;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: 300;
+    color: $white;
+    background: url(asset_path('bg_smoke.png')) repeat;
+    background-color: $light-marine-blue;
+    text-shadow: 1px 2px $dark-marine-blue;
+    box-shadow: inset 0 15px 20px 5px transparentize($white, .81),
+                inset 0 -15px 20px 5px transparentize($dark-marine-blue, .5)
+  }
+}

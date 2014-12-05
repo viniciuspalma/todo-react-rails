@@ -1,0 +1,39 @@
+/*
+* Todo List Item component
+*/
+
+.todo-list-item {
+  width: 270px;
+  height: 50px;
+  padding: 0 20px;
+  border-bottom: 1px solid $light-grey;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+  .task,
+  .position {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 50px;
+    margin: 0;
+    font-size: (14 / 12#{em});
+  }
+
+  .task {
+    font-weight: 300;
+    color: $dark-marine-blue;
+  }
+
+  .position {
+    margin-right: 20px;
+  }
+
+  .completed {
+    float: right;
+    line-height: 50px;
+  }
+}
