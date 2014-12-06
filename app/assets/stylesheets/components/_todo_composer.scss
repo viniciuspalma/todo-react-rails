@@ -1,0 +1,55 @@
+/*
+* Todo List Item component
+*/
+
+
+.todo-composer {
+  width: 400px;
+  height: 60px;
+  margin: 20px auto;
+  padding: 8px;
+  border: 1px solid $dark-marine-blue;
+  border-radius: 8px;
+  box-shadow: inset -1px 1px 2px 0 $white;
+  @include background-image(linear-gradient(transparent, transparentize($dark-brown, .3)));
+
+  .input-text,
+  .button-add-task {
+    display: inline-block;
+    vertical-align: top;
+    height: 42px;
+    font-size: (13 / 12#{em});
+    border-radius: 4px;
+    color: $white;
+    border: 1px solid transparentize($white, .6);
+
+    &:active,
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  .input-text {
+    width: 264px;
+    padding-left: 10px;
+    border-radius: 5px;
+    background: transparentize($dark-brown, .2);
+    box-shadow: inset -1px 1px .5px 0 transparentize($white, .6),
+                inset 1px -1px .5px 0 $black;
+
+  }
+
+  .button-add-task {
+    width: 110px;
+    margin-left: 8px;
+    border-color: $dark-brown;
+    background: $orange;
+    text-shadow: 1px 1px 2px $black;
+    box-shadow: inset -1px 1px .5px 0 transparentize($white, .6);
+    @include background-image(linear-gradient(transparent, transparentize($dark-brown, .3)));
+
+    &:active {
+      @include background-image(linear-gradient(transparent, transparentize($dark-brown, .5)))
+    }
+  }
+}
