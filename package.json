@@ -1,10 +1,17 @@
 {
-  "name": "Todo MVC",
-  "devDependencies" : {
-    "browserify": "~> 4.1"
+  "name": "Todo-MVC",
+  "devDependencies": {
+    "browserify": "~> 4.1",
+    "reactify": "^0.17.1"
   },
   "license": "MIT",
   "engines": {
     "node": ">= 0.10"
+  },
+  "dependencies": {
+    "fetch": "git://github.com/github/fetch",
+    "flux": "^2.0.1",
+    "keymirror": "~0.1.0",
+    "lodash": "^2.4.1"
   }
 }
