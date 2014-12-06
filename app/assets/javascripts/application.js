@@ -15,5 +15,7 @@
 //= require turbolinks
 //= require react
 //= require react_ujs
-//= require components
-//= require_tree .
+
+var TodoApp = require('./components/todo_app');
+
+window.TodoApp = TodoApp;
