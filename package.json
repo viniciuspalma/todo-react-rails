@@ -1,7 +1,7 @@
 {
   "name": "Todo-MVC",
   "devDependencies": {
-    "browserify": "~> 4.1",
+    "browserify": "^6.2.0",
     "reactify": "^0.17.1"
   },
   "license": "MIT",
@@ -9,6 +9,7 @@
     "node": ">= 0.10"
   },
   "dependencies": {
+    "es6-promise": "^2.0.0",
     "fetch": "git://github.com/github/fetch",
     "flux": "^2.0.1",
     "keymirror": "~0.1.0",

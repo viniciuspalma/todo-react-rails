@@ -3,10 +3,16 @@ var TodoItem = require('./todo_list_item'),
 
 
 function getTodoItems(item, i) {
-  return <TodoItem title={ item.title } key={ item.id } position={ i + 1 } completed={ item.completed } />
+  return <TodoItem data={ item } position={ i + 1 } />
 }
 
 var TodoList = React.createClass({
+  getInitialState: function() {
+    return {
+      items: TodoStore.getColletion()
+    }
+  },
+
   componentDidMount: function() {
     TodoStore.addChangeListener(this._onChange);
   },
@@ -16,10 +22,13 @@ var TodoList = React.createClass({
   },
 
   _onChange: function() {
+    this.setState({
+      items: TodoStore.getColletion()
+    });
   },
 
   render: function() {
-    var items = this.props.items.map(getTodoItems);
+    var items = this.state.items.map(getTodoItems);
 
     return (
       <div className='todo-list'>

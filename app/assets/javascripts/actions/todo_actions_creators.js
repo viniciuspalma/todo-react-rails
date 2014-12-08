@@ -10,6 +10,13 @@ module.exports = {
       type: ActionTypes.CREATE_TODO,
       text: text
     });
+  },
+
+  deleteTodo: function(id) {
+    TodoAppDispatcher.handleViewAction({
+      type: ActionTypes.DELETE_TODO,
+      id: id
+    });
   }
 
 };

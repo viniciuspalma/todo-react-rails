@@ -16,6 +16,9 @@
 //= require react
 //= require react_ujs
 
-var TodoApp = require('./components/todo_app');
+var TodoApp = require('./components/todo_app'),
+  TodoApi = require('./api/todo_api');
 
-window.TodoApp = TodoApp;
+TodoApi.getAllTodos();
+
+React.render(<TodoApp name='Todo List'/>, document.querySelector('[data-todo-app]'));
