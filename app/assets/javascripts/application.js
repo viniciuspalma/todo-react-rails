@@ -15,5 +15,10 @@
 //= require turbolinks
 //= require react
 //= require react_ujs
-//= require components
-//= require_tree .
+
+var TodoApp = require('./components/todo_app'),
+  TodoApi = require('./api/todo_api');
+
+TodoApi.getAllTodos();
+
+React.render(<TodoApp name='Todo List'/>, document.querySelector('[data-todo-app]'));
