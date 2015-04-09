@@ -3,7 +3,7 @@
 */
 
 .todo-list {
-  width: 300px;
+  width: 400px;
   height: 350px;
   margin: 0 auto;
   background: url(asset_path('bg_smoke.png')) repeat;
@@ -11,7 +11,7 @@
   border-radius: 0 0 20px 20px;
 
   .list-content {
-    width: 270px;
+    width: 370px;
     height: 320px;
     background: white;
     margin: 0 15px;
@@ -24,6 +24,7 @@
                 0 12px 0 0 $light-grey;
 
     .list {
+      width: 100%;
       display: inline-block;
       height: 320px - 50px;
       margin: 0;
