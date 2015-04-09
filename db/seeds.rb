@@ -5,3 +5,15 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+require 'faker'
+
+# Create items
+25.times do
+  Todo.create!(
+    title: Faker::Lorem.words(3).join(' '),
+    completed: [true, false].sample
+  )
+end
+puts "25 items created"
+
+puts "Seed finished"

@@ -58,6 +58,8 @@ GEM
     connection_pool (2.1.0)
     erubis (2.7.0)
     execjs (2.2.2)
+    faker (1.4.3)
+      i18n (~> 0.5)
     fssm (0.2.10)
     hike (1.2.3)
     i18n (0.6.11)
