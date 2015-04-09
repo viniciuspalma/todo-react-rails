@@ -3,7 +3,7 @@ var TodoApiActionsCreators = require('../actions/todo_api_actions_creators'),
   API_NAMESPACE            = '/api/v1/todos',
 
 require('es6-promise').polyfill();
-require('fetch');
+require('whatwg-fetch');
 
 module.exports = {
   getAllTodos: function() {

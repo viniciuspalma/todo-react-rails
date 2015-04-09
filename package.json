@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "es6-promise": "^2.0.0",
-    "fetch": "git://github.com/github/fetch",
+    "whatwg-fetch": "^0.7.0",
     "flux": "^2.0.1",
     "keymirror": "~0.1.0",
     "lodash": "^2.4.1"
